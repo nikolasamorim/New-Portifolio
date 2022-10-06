@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script src="js/main.js"></script>
+
+    <!--Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--fontAwesome-->
+    <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Nikolas Amorim - Home</title>
+</head>
+
+<body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+    <script>
+        //<![CDATA[
+        $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+            //]]>
+    </script>
+
+    <nav>
+        <div class="org-nav">
+            <ul>
+                <li><a href="#" class="logo"><img src="img/logo-dark.png" alt="logo.png"></a></li>
+            </ul>
+            <ul class="header">
+                <li class="li"><a href="#before">Sobre mim</a></li>
+                <li class="li"><a href="#expo">Serviços</a></li>
+                <li class="li"><a href="#">Experiência</a></li>
+                <li class="li"><a href="#">Portfólio</a></li>
+                <li><a class="spec-but" href="#contato">Contato</a></li>
+            </ul>
+            <!--Hamburguer-->
+            <div class="org">
+                <input id="hamburguer" type="checkbox" style="display:none;">
+                <label for="hamburguer">
+                    <div class="hamburguer active"></div>
+                </label>
+                <ul class="menu active">
+                    <li><a href="#before">Portifólio</a></li>
+                    <li><a href="#expo">Experiência</a></li>
+                    <li><a href="#">Modelos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(".hamburguer").click(function () {
+                        $(this).toggleClass("active");
+                        $(".menu").toggleClass("active");
+                    });
+                });
+            </script>
+        </div>
+    </nav>
+
+    <!-- APRESENTATION-VIEW -->
+    <section>
+
+    </section>
+    <!-- END -> APRESENTATION-VIEW -->
+
+        <!-- ABOUT-Viewr -->
+        <section>
+
+        </section>
+        <!-- END -> ABOUT-VIEW -->
+
+</body>
+
+</html>
