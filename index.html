@@ -14,6 +14,10 @@
     <!--fontAwesome-->
     <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
 
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -58,7 +62,7 @@
                 <li class="li"><a href="#about">Sobre mim</a></li>
                 <li class="li"><a href="#services">Serviços</a></li>
                 <li class="li"><a href="#">Experiência</a></li>
-                <li><a class="spec-but" href="#">Portifólio</a></li>
+                <li><a class="spec-but" href="#portfolio-view">Portifólio</a></li>
             </ul>
             <!--Hamburguer-->
             <div class="org">
@@ -85,7 +89,7 @@
     </nav>
 
     <!-- APRESENTATION-VIEW -->
-    <section class="container">
+    <section id="view-sec" class="container">
         <div class="org-align">
             <div class="align-center">
                 <!-- SPAN DA ESQUERDA -->
@@ -102,7 +106,8 @@
                         <a id="adjust-but" class="spec-but" href="#contato">Contato</a>
                     </div>
                     <div class="redes-sociais">
-                        <a href="https://www.linkedin.com/in/nikolasamorim/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/nikolasamorim/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://github.com/nikolasamorim"><i class="fa-brands fa-github"></i></a>
                         <a href="https://linktr.ee/nikolasamorim"><i class="fa-solid fa-tree"></i></a>
                         <a href="https://codepen.io/nikolas_amorim"><i class="fa-brands fa-codepen"></i></a>
@@ -115,7 +120,7 @@
                     </div>
                     <div class="redes-sociais light-dark">
                         <a onclick="dayfornight()" id="sun" class="sun" href="#"><i class="fa-solid fa-sun"></i></a>
-                        
+
                         <a onclick="nightforday()" id="none-moon" class="moon" href="#"><i
                                 class="fa-solid fa-moon"></i></a>
 
@@ -162,11 +167,53 @@
     <!-- SERVICES-VIEW -->
     <section id="services" class="container">
         <div class="org-align">
-
+            <div class="align-center">
+                <h1 class="services-h1">
+                    <div class="verde-principal">Serviços</div>
+                </h1>
+                <div class="services-cont">
+                    <div>
+                        <ion-icon name="bulb-outline"></ion-icon><br>
+                        Interfaces Web
+                        <h1>
+                            Design UX & UI
+                        </h1>
+                        a
+                    </div>
+                    <div>
+                        <ion-icon name="construct-outline"></ion-icon><br>
+                        Front-end & Back-end
+                        <h1>
+                            Construção de Sites
+                        </h1>
+                        a
+                    </div>
+                    <div>
+                        <ion-icon name="desktop-outline"></ion-icon><br>
+                        Projetos Autônomos
+                        <h1>
+                            Site Customizado
+                        </h1>
+                        a
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="grey-div"></div>
     </section>
     <!-- END SERVICES-VIEW -->
 
+    <!-- PORTFOLIO-VIEW -->
+    <section id="portfolio-view" class="container">
+        <div class="org-align">
+            <div class="align-center">
+
+            </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO-VIEW -->
+
+    <!-- FOOTER-VIEW -->
     <footer id="footer-main">
         <section class="footer-ap">
             <section class="footer-1">
@@ -204,10 +251,11 @@
 
     <div class="last">
         <div>
-            Copyright© 2022 - Made by <a class="logo-footer" href="https://linktr.ee/nikolasamorim"><img src="img/logo-footer.png"
-                    alt="logo.png"></a>
+            Copyright© 2022 - Made by <a class="logo-footer" href="https://linktr.ee/nikolasamorim"><img
+                    src="img/logo-footer.png" alt="logo.png"></a>
         </div>
     </div>
+    <!-- END FOOTER-VIEW -->
 
 </body>
 

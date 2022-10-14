@@ -9,6 +9,7 @@ function nightforday() {
 
     document.body.style.setProperty('--dark-first', '#151A20');
     document.body.style.setProperty('--dark-second', '#1F252D');
+    document.body.style.setProperty('--dark-three', '#2b2f35')
     document.body.style.setProperty('--font-light', '#f0f0f0');
     document.getElementById('moon').id = 'none-moon';
     document.getElementById('none-sun').id = 'sun';
@@ -29,6 +30,7 @@ function dayfornight() {
 
     document.body.style.setProperty('--dark-first', '#f3f3f3');
     document.body.style.setProperty('--dark-second', '#e0e0e0');
+    document.body.style.setProperty('--dark-three', '#fafafa')
     document.body.style.setProperty('--font-light', 'rgb(32, 32, 32)');
     document.getElementById('sun').id = 'none-sun';
     document.getElementById('none-moon').id = 'moon';
