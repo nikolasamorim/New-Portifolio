@@ -219,22 +219,189 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="grey-li"><a href="#">Estudo</a></li>
-                    <li class="grey-li"><a href="#">Testes</a></li>
-                    <li class="grey-li"><a href="#">Profissional</a></li>
+                    <li class="grey-li"><a href="#estudo">Estudo</a></li>
+                    <li class="grey-li"><a href="#testes">Testes</a></li>
+                    <li class="grey-li"><a href="#profissional">Profissional</a></li>
                 </ul>
-                <ul>
-                    <li class="grey-li"><a href="#">
+                <ul class="control-pagination">
+                    <li class="grey-li"><a class="prev" href="#portfolio-view">
                             <ion-icon name="arrow-back-outline"></ion-icon>
                         </a></li>
-                    <li class="grey-li"><a href="#">
+                    <li class="grey-li"><a class="next" href="#portfolio-view">
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </a></li>
                 </ul>
             </div>
             <!-- CARROUSEL -->
             <div class="carrousel">
-                
+
+                <div class="container-carrousel">
+                    <div class="slider">
+                        <div class="slider-content">
+                            <div id="estudo" class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/1.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/1.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/2.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/2.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/3.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/3.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/4.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/4.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="testes" class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/5.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/5.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="profissional" class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/6.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/6.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/7.png" alt="" />
+                                    <div class="onhover">
+                                        <img src="img/carrousel/7.png" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var slides = document.querySelectorAll(".slide");
+
+                    function eachFunc(array, fn) {
+                        for (var i = 0; i < array.length; i++) {
+                            fn.call(array[i]);
+                        }
+                    }
+
+                    function eachSiblings(node, fnprev, fnafter) {
+                        console.log("Ejecutando la funcion eachSiblings()");
+                        var foundIndex = findNodeIndex(node);
+                        console.log("indice encontrado", foundIndex);
+                        for (var i = 0; i < node.parentNode.children.length; i++) {
+                            if (node.parentNode.children[i] != node) {
+                                if (i < foundIndex) {
+                                    fnprev.call(node.parentNode.children[i], foundIndex);
+                                } else {
+                                    fnafter.call(node.parentNode.children[i], foundIndex);
+                                }
+                            }
+                        }
+                    }
+
+                    function findNodeIndex(node) {
+                        if (node != undefined) { // Si el nodo es diferente de undefined
+                            for (var i = 0; i < node.parentNode.children.length; i++) {
+                                console.log("Iterando nodo practicamente hermano", i);
+                                if (node === node.parentNode.children[i]) { // Si el nodo parametro es igual a el nodo encontrado como hijo
+                                    return i;
+                                }
+                            }
+                        } else {
+                            alert('ERRO!! Infelizmente não foi possível realizar a ação!')
+                        }
+                    }
+
+                    function siblings(node) {
+                        var siblings = [];
+                        for (var i = 0; i < node.parentNode.children; i++) {
+                            if (node.parentNode.children[i] == node) {
+                                siblings.push(node.parentNode.children[i]);
+                            }
+                        }
+                        return siblings;
+                    }
+
+                    eachFunc(slides, function () {
+                        this.addEventListener("mouseover", function () {
+                            var layerHover = this.querySelector(".onhover");
+                            layerHover.style.width = "135%";
+                            eachSiblings(this, function (x) { // Before Siblings
+                                if ((x + 1) % 6 == 0) { // Si el indice del slide (zoomeable) + 1,  es multiplo de 6
+                                    // Que Todos los nodos hermanos previos se desplazen 36% hacia la izquierda
+                                    this.style.transform = "translateX(-36%)";
+                                } else {
+                                    if (x % 6 != 0) { // Si el indice del slide (zoomeable),  no es multiplo de 6
+                                        // Que todos los nodos hermanos previos se desplazen 18% hacia la izquierda
+                                        this.style.transform = "translateX(-18%)";
+                                    }
+                                }
+                            }, function (x) { // After Siblings
+                                if (x % 6 == 0) { // Si el indice del slide (zoomeable),  es multiplo de 6
+                                    // Que todos los nodos hermanos siguientes se desplazen 36% hacia la derecha
+                                    this.style.transform = "translateX(36%)";
+                                } else {
+                                    if ((x + 1) % 6 != 0) { // Si el indice del slide (zoomeable) + 1,  es multiplo de 6
+                                        // Que todos los nodos hermanos siguientes se desplazen 18% hacia la derecha
+                                        this.style.transform = "translateX(18%)";
+                                    }
+                                }
+                            });
+                        }, false);
+                        this.addEventListener("mouseleave", function () {
+                            var layerHover = this.querySelector(".onhover");
+                            layerHover.style.width = "";
+                            eachSiblings(this, function () {
+                                this.style.transform = "";
+                            }, function () {
+                                this.style.transform = "";
+                            });
+                        }, false);
+                    });
+                    // Pagination
+                    var sliderContent = document.querySelector(".slider-content");
+                    var prev = document.querySelector(".prev"),
+                        next = document.querySelector(".next");
+                    var pos = 0;
+                    next.addEventListener("click", function () {
+                        if (pos < Math.ceil(slides.length / 6) - 1) {
+                            pos++;
+                            console.log(pos);
+                            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
+                        }
+                    });
+
+                    prev.addEventListener("click", function () {
+                        if (pos > 0) {
+                            pos--;
+                            console.log(pos);
+                            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
+                        }
+                    });
+
+                </script>
             </div>
         </div>
     </section>
