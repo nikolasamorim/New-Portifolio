@@ -372,6 +372,17 @@ nav ul .li a:hover::after {
     color: var(--verde-principal);
 }
 
+.line-but{
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 1px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 450;
+    color: var(--font-light);
+}
+
 .underline-but {
     position: relative;
     padding: 10px 15px;
@@ -790,8 +801,48 @@ nav ul .li a:hover::after {
 
 /* CONTACT-VIEW */
 
+#contact-view.container{
+    padding: 70px 0px 70px 0px;
+}
+
 #contact-view .align-center {
     align-items: center;
+}
+
+#contact-view .align-center a i{
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 1px;
+    color: #f0f0f0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 0.6s;
+}
+
+#contact-view .align-center .fa-whatsapp {
+    font-size: 1.5rem;
+    padding: 10px 11px;
+    box-shadow: -1px 5px 15px -2px #31BA45;
+    border-radius: 1px;
+    background-color: #31BA45;
+}
+
+#contact-view .align-center .fa-linkedin-in{
+    font-size: 1.5rem;
+    padding: 10px 11px;
+    border-radius: 1px;
+}
+
+#contact-view .align-center .fa-instagram{
+    font-size: 1.5rem;
+    padding: 10px 11px;
+    border-radius: 1px;
+}
+
+#contact-view .align-center a i:hover {
+    transform: scale(1.1);
 }
 
 /* END CONTACT-VIEW */

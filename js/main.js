@@ -7,6 +7,12 @@ function nightforday() {
     var image = document.querySelector("#apresentation-img");
     image.setAttribute('src', 'img/about-nik-wpp.png');
 
+    var about = document.querySelector("#about-img");
+    about.setAttribute('src', 'img/about-nik-dark.png');
+
+    var contact = document.querySelector("#contact-img");
+    contact.setAttribute('src', 'img/contact-nik-dark.png');
+
     document.body.style.setProperty('--dark-first', '#151A20');
     document.body.style.setProperty('--dark-second', '#1F252D');
     document.body.style.setProperty('--dark-three', '#2b2f35')
@@ -28,6 +34,12 @@ function dayfornight() {
 
     var image = document.querySelector("#apresentation-img");
     image.setAttribute('src', 'img/about-nik-light-wpp.png');
+    
+    var about = document.querySelector("#about-img");
+    about.setAttribute('src', 'img/about-nik-light.png');
+
+    var contact = document.querySelector("#contact-img");
+    contact.setAttribute('src', 'img/contact-nik-light.png');
 
     document.body.style.setProperty('--dark-first', '#f3f3f3');
     document.body.style.setProperty('--dark-second', '#e0e0e0');
