@@ -279,6 +279,9 @@ nav ul .li a:hover::after {
   padding: 0px 0px 30px 0px;
   height: 100%; }
 
+.space-itens img {
+  max-width: 350px; }
+
 .bg-second {
   background-color: var(--dark-second); }
 
@@ -642,6 +645,11 @@ nav ul .li a:hover::after {
 
 /* END CARROUSEL*/
 /* END PORTFOLIO-VIEW */
+/* CONTACT-VIEW */
+#contact-view .align-center {
+  align-items: center; }
+
+/* END CONTACT-VIEW */
 /* FOOTER */
 #footer-main {
   background-color: #0f0f0f;

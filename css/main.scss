@@ -341,6 +341,10 @@ nav ul .li a:hover::after {
     height: 100%;
 }
 
+.space-itens img{
+    max-width: 350px;
+}
+
 .bg-second {
     background-color: var(--dark-second);
 }
@@ -786,7 +790,9 @@ nav ul .li a:hover::after {
 
 /* CONTACT-VIEW */
 
-
+#contact-view .align-center {
+    align-items: center;
+}
 
 /* END CONTACT-VIEW */
 
