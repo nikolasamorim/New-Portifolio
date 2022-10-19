@@ -453,6 +453,10 @@ nav ul .li a:hover::after {
     width: 125px;
 }
 
+.container .img-view .infos-align #apresentation-img {
+    rotate: 9deg;
+}
+
 .container .org-align .align-center span h1 {
     font-size: 2rem;
     margin-bottom: 7px;
@@ -947,7 +951,4 @@ nav ul .li a:hover::after {
         width: 50%;
     }
 
-    .container .img-view .infos-align #apresentation-img {
-        display: none;
-    }
 }
