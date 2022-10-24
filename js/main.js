@@ -1,5 +1,3 @@
-
-
 function nightforday() {
     var nav = document.querySelector("#nav-img");
     nav.setAttribute('src', 'img/logo-dark.png');
@@ -18,8 +16,12 @@ function nightforday() {
     document.body.style.setProperty('--dark-three', '#2b2f35')
     document.body.style.setProperty('--font-light', '#f0f0f0');
     document.body.style.setProperty('--font-second', '#d3d3d3');
+
     document.getElementById('moon').id = 'none-moon';
     document.getElementById('none-sun').id = 'sun';
+
+    document.getElementById('moonmenu').id = 'none-moonmenu';
+    document.getElementById('none-sunmenu').id = 'sunmenu';
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave2').style.backgroundImage = "url('img/wave.png')";
@@ -46,12 +48,15 @@ function dayfornight() {
     document.body.style.setProperty('--dark-three', '#fafafa')
     document.body.style.setProperty('--font-light', '#202020');
     document.body.style.setProperty('--font-second', '#3a3a3a');
+
     document.getElementById('sun').id = 'none-sun';
     document.getElementById('none-moon').id = 'moon';
+
+    document.getElementById('sunmenu').id = 'none-sunmenu';
+    document.getElementById('none-moonmenu').id = 'moonmenu';
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave2').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave3').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave4').style.backgroundImage = "url('img/wave-light.png')";
 }
-
