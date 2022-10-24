@@ -35,6 +35,9 @@
 #none-sun {
   display: none; }
 
+.load-img {
+  display: none; }
+
 body {
   min-height: 100vh;
   background-color: var(--dark-first); }
@@ -256,6 +259,7 @@ nav ul .li a:hover::after {
   margin-bottom: 80px; }
 
 .menu .light-dark {
+  display: none;
   position: relative; }
 
 .menu .light-dark a {
@@ -675,7 +679,8 @@ nav ul .li a:hover::after {
 #contact-view.container {
   padding: 70px 0px 70px 0px;
   text-decoration: none;
-  color: var(--font-light); }
+  color: var(--font-light);
+  font-size: 0.9rem; }
 
 #contact-view .align-center {
   align-items: center; }
@@ -811,6 +816,8 @@ nav ul .li a:hover::after {
     width: 350px; }
   .spec-but {
     margin-bottom: 40px; }
+  .menu .light-dark {
+    display: block; }
   .redes-sociais.light-dark {
     display: none; }
   .onda {
