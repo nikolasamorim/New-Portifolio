@@ -248,7 +248,7 @@ nav ul .li a:hover::after {
   width: 70%;
   margin: 0;
   background-color: #151a20a6;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(50px);
   padding: 20px;
   list-style: none;
   transition: 0.5s; }
