@@ -673,7 +673,9 @@ nav ul .li a:hover::after {
 /* END PORTFOLIO-VIEW */
 /* CONTACT-VIEW */
 #contact-view.container {
-  padding: 70px 0px 70px 0px; }
+  padding: 70px 0px 70px 0px;
+  text-decoration: none;
+  color: var(--font-light); }
 
 #contact-view .align-center {
   align-items: center; }

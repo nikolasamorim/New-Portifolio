@@ -821,6 +821,8 @@ nav ul .li a:hover::after {
 
 #contact-view.container{
     padding: 70px 0px 70px 0px;
+    text-decoration: none;
+    color: var(--font-light);
 }
 
 #contact-view .align-center {
