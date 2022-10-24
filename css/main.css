@@ -186,7 +186,7 @@ nav ul .li a:hover::after {
   display: none;
   cursor: pointer;
   top: 10px;
-  right: 20%;
+  right: 11%;
   width: 50px;
   height: 40px;
   z-index: 1000; }
@@ -194,7 +194,7 @@ nav ul .li a:hover::after {
 .hamburguer::after {
   content: '';
   position: relative;
-  margin-left: 16px;
+  margin-left: 17px;
   width: 65%;
   height: 5px;
   background-color: var(--font-light);
@@ -214,13 +214,13 @@ nav ul .li a:hover::after {
   background-color: var(--verde-principal);
   margin-left: 0px;
   transform: rotate(-135deg);
-  bottom: 12.5px;
+  bottom: 11px;
   width: 90%; }
 
 #hamburguer:checked ~ label .hamburguer::before {
   background-color: var(--verde-principal);
   transform: rotate(135deg);
-  margin-top: 12.5px;
+  margin-top: 12px;
   width: 90%; }
 
 #hamburguer:checked ~ label .hamburguer {
@@ -723,10 +723,6 @@ nav ul .li a:hover::after {
   border-radius: 1px;
   padding: 5px; }
 
-@media (max-width: 1024px) {
-  .footer-ap {
-    padding-left: 20px; } }
-
 /* --------------------------
   ---------- styles ----------- 
   ---------------------------*/
@@ -774,6 +770,9 @@ nav ul .li a:hover::after {
 
 /* END FOOTER */
 @media (max-width: 990px) {
+  .bolas > div {
+    width: 20px;
+    height: 20px; }
   nav {
     position: relative; }
   .header {
@@ -800,6 +799,11 @@ nav ul .li a:hover::after {
     width: 350px; }
   .spec-but {
     margin-bottom: 25px; }
+  .redes-sociais.light-dark {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 9999999; }
   .onda {
     position: relative; }
   .services-cont {
@@ -818,4 +822,6 @@ nav ul .li a:hover::after {
   #contact-view .align-center a i:hover {
     transform: scale(1.1); }
   .last {
-    font-size: 0.7rem; } }
+    font-size: 0.7rem; }
+  .last .logo-footer img {
+    display: inline; } }

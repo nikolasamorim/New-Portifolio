@@ -230,7 +230,7 @@ nav ul .li a:hover::after {
     display: none;
     cursor: pointer;
     top: 10px;
-    right: 20%;
+    right: 11%;
     width: 50px;
     height: 40px;
     z-index: 1000;
@@ -239,7 +239,7 @@ nav ul .li a:hover::after {
 .hamburguer::after {
     content: '';
     position: relative;
-    margin-left: 16px;
+    margin-left: 17px;
     width: 65%;
     height: 5px;
     background-color: var(--font-light);
@@ -261,14 +261,14 @@ nav ul .li a:hover::after {
     background-color: var(--verde-principal);
     margin-left: 0px;
     transform: rotate(-135deg);
-    bottom: 12.5px;
+    bottom: 11px;
     width: 90%;
 }
 
 #hamburguer:checked~label .hamburguer::before {
     background-color: var(--verde-principal);
     transform: rotate(135deg);
-    margin-top: 12.5px;
+    margin-top: 12px;
     width: 90%;
 }
 
@@ -882,12 +882,6 @@ nav ul .li a:hover::after {
     padding: 5px;
 }
 
-@media (max-width: 1024px) {
-    .footer-ap {
-        padding-left: 20px;
-    }
-}
-
 
 /* --------------------------
   ---------- styles ----------- 
@@ -949,6 +943,11 @@ nav ul .li a:hover::after {
 
 @media(max-width: 990px) {
 
+    .bolas>div {
+        width: 20px;
+        height: 20px;
+    }
+
     nav{
         position: relative;
     }
@@ -995,6 +994,13 @@ nav ul .li a:hover::after {
         margin-bottom: 25px;
     }
 
+    .redes-sociais.light-dark {
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 9999999;
+    }
+
     .onda {
         position: relative;
     }
@@ -1028,5 +1034,9 @@ nav ul .li a:hover::after {
 
     .last{
         font-size: 0.7rem;
+    }
+
+    .last .logo-footer img {
+        display: inline;
     }
 }
