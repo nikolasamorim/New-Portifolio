@@ -291,7 +291,7 @@ nav ul .li a:hover::after {
     height: 100%;
     width: 70%;
     margin: 0;
-    background-color: #000000d7;
+    background-color: #151a20a6;
     backdrop-filter: blur(10px);
     padding: 20px;
     list-style: none;
@@ -310,6 +310,18 @@ nav ul .li a:hover::after {
 
 .menu li {
     margin-bottom: 80px;
+}
+
+.menu .light-dark{
+    position: relative;
+}
+
+.menu .light-dark a{
+    font-size: 1.4rem;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: var(--dark-first);
+    background-color: var(--verde-principal);
 }
 
 /* END HAMBURGUER */
@@ -478,7 +490,6 @@ nav ul .li a:hover::after {
     border-radius: 1px;
     padding: 6px 12px;
     color: var(--verde-principal);
-
     transition: 0.5s;
 }
 
@@ -991,14 +1002,11 @@ nav ul .li a:hover::after {
     }
 
     .spec-but {
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
 
     .redes-sociais.light-dark {
-        position: fixed;
-        right: 30px;
-        bottom: 30px;
-        z-index: 9999999;
+        display: none;
     }
 
     .onda {
@@ -1038,5 +1046,6 @@ nav ul .li a:hover::after {
 
     .last .logo-footer img {
         display: inline;
+        width: 40px;
     }
 }
