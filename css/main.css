@@ -185,17 +185,17 @@ nav ul .li a:hover::after {
 .hamburguer {
   display: none;
   cursor: pointer;
-  top: 22.5%;
-  right: 5%;
-  width: 130px;
-  height: 100px;
+  top: 7px;
+  right: 20%;
+  width: 50px;
+  height: 50px;
   z-index: 1000; }
 
 .hamburguer::after {
   content: '';
   position: relative;
   width: 100%;
-  height: 14px;
+  height: 5px;
   background-color: var(--font-light);
   z-index: 1000;
   transition: 0.6s ease; }
@@ -204,7 +204,7 @@ nav ul .li a:hover::after {
   content: '';
   position: relative;
   width: 100%;
-  height: 14px;
+  height: 5px;
   background-color: var(--font-light);
   z-index: 1000;
   transition: 0.6s ease; }
@@ -212,18 +212,17 @@ nav ul .li a:hover::after {
 #hamburguer:checked ~ label .hamburguer:after {
   background-color: var(--verde-principal);
   transform: rotate(-135deg);
-  top: -30px;
+  bottom: 12.5px;
   width: 90%; }
 
 #hamburguer:checked ~ label .hamburguer::before {
   background-color: var(--verde-principal);
   transform: rotate(135deg);
-  margin-top: 15px;
+  margin-top: 12.5px;
   width: 90%; }
 
 #hamburguer:checked ~ label .hamburguer {
-  position: fixed;
-  top: 5.5%; }
+  position: fixed; }
 
 .org {
   display: none; }
@@ -233,7 +232,7 @@ nav ul .li a:hover::after {
   position: fixed;
   flex-direction: column;
   top: 0;
-  right: 0;
+  right: 10%;
   height: 100%;
   width: 50%;
   margin: 0;
@@ -772,6 +771,35 @@ nav ul .li a:hover::after {
 
 /* END FOOTER */
 @media (max-width: 990px) {
+  nav {
+    position: relative; }
+  .header {
+    display: none; }
+  .hamburguer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+  .org {
+    display: unset; }
+  .align-center {
+    flex-direction: column; }
+  #view-sec .align-center {
+    flex-direction: column-reverse; }
   .container .org-align .align-center span {
     position: relative;
-    width: 50%; } }
+    width: 100%; }
+  .container .org-align .align-center .img-view img {
+    position: relative;
+    top: 0;
+    width: 350px; }
+  .spec-but {
+    margin-bottom: 25px; }
+  .onda {
+    position: absolute;
+    bottom: 0px; }
+  .services-cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px; } }
