@@ -1,3 +1,6 @@
+if(document.cookie != null){
+    return climate();
+}
 
 function climate(i) {
     var i
