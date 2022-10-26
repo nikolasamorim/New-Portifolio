@@ -772,21 +772,24 @@ nav ul .li a:hover::after {
   color: #b9b9b9; }
 
 .last {
-  display: flex;
   position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
   left: 0;
   bottom: 0;
   width: 100%;
+  padding: 7px 0px;
   background-color: #1d1d1d;
   color: #b4b4b4;
   font-size: 0.8rem; }
 
+.last div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
 .last .logo-footer img {
-  position: absolute;
+  display: inline;
+  position: relative;
   margin-left: 7px;
   width: 50px; }
 
