@@ -1,4 +1,21 @@
-function nightforday() {
+
+
+let i = 0
+let x = 5
+
+if(i == 0){
+    document.cookie = "night";
+}
+
+if(document.cookie == "night"){
+    alert("deu bom")
+}else{
+
+}
+
+
+
+function night() {
     var nav = document.querySelector("#nav-img");
     nav.setAttribute('src', 'img/logo-dark.png');
 
@@ -27,10 +44,12 @@ function nightforday() {
     document.getElementById('wave2').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave3').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave4').style.backgroundImage = "url('img/wave.png')";
+
+    return i = 0
 }
 
 
-function dayfornight() {
+function day() {
     var nav = document.querySelector("#nav-img");
     nav.setAttribute('src', 'img/logo-light.png');
 
@@ -59,4 +78,21 @@ function dayfornight() {
     document.getElementById('wave2').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave3').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave4').style.backgroundImage = "url('img/wave-light.png')";
+
+    return i = 1
+}
+
+
+
+
+//FUNÇÃO DE VOLTAR PORTFOLIO
+function prev() {
+    const carrousel = document.getElementById('carrousel');
+    carrousel.scrollBy(-500, 0);
+}
+
+//FUNÇÃO DE VOLTAR PORTFOLIO
+function next() {
+    const carrousel = document.getElementById('carrousel');
+    carrousel.scrollBy(500, 0);
 }

@@ -79,10 +79,12 @@
                     <li><a href="#portfolio-view">Portfólio</a></li>
                     <li><a href="#contact-view">Contato</a></li>
                     <li class="light-dark">
-                    <a onclick="dayfornight()" id="sunmenu" class="sun" href="#null"><i class="fa-solid fa-sun"></i></a>
+                        <a onclick="dayfornight()" id="sunmenu" class="sun" href="#null"><i
+                                class="fa-solid fa-sun"></i></a>
 
-                    <a onclick="nightforday()" id="none-moonmenu" class="moon" href="#null"><i
-                            class="fa-solid fa-moon"></i></a></li>
+                        <a onclick="nightforday()" id="none-moonmenu" class="moon" href="#null"><i
+                                class="fa-solid fa-moon"></i></a>
+                    </li>
                 </ul>
             </div>
             <script>
@@ -127,9 +129,9 @@
                         <img id="apresentation-img" src="img/about-nik-wpp.png" alt="nik.png">
                     </div>
                     <div class="redes-sociais light-dark">
-                        <a onclick="dayfornight()" id="sun" class="sun" href="#null"><i class="fa-solid fa-sun"></i></a>
+                        <a onclick="day()" id="sun" class="sun" href="#null"><i class="fa-solid fa-sun"></i></a>
 
-                        <a onclick="nightforday()" id="none-moon" class="moon" href="#null"><i
+                        <a onclick="night()" id="none-moon" class="moon" href="#null"><i
                                 class="fa-solid fa-moon"></i></a>
 
                     </div>
@@ -160,14 +162,41 @@
                         </h1>
                     </div>
                     Atualmente possuo 18 anos e atuo no mercado de trabalho desde os 17 anos.
-                    Trabalhei como menor aprendiz por um curto período de tem e também como
-                    freelancer de sites.
+                    Trabalhei como menor aprendiz por um curto período de tempo e hoje atuo 
+                    como freelancer de sites.
                     <br><br>
-                    <a id="adjust-but" class="spec-but" href="#contato">Experiência</a>
+                    <a id="news" id="adjust-but"class="spec-but" href="#about">Experiência</a>
                 </span>
             </div>
         </div>
     </section>
+    <section class="newspaper">
+        <div class="container-news">
+            <span class="head-news">
+                <h1>
+                    Experiência
+                </h1>
+                <a class="close" id="news-close" href="#about"></a>
+            </span>
+            <span class="body-news">
+
+            </span>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $("#news").click(function () {
+                $(this).toggleClass("see");
+                $(".newspaper").toggleClass("see");
+            });
+        });
+        $(document).ready(function () {
+            $("#news-close").click(function () {
+                $(this).toggleClass("see");
+                $(".newspaper").toggleClass("see");
+            });
+        });
+    </script>
     <!-- END -> ABOUT-VIEW -->
 
     <!-- SERVICES-VIEW -->
@@ -231,16 +260,16 @@
                     <li class="grey-li"><a href="#profissional">Profissional</a></li>
                 </ul>
                 <ul class="control-pagination">
-                    <li class="grey-li"><a class="prev" href="#portfolio-view">
+                    <li class="grey-li"><a class="prev" onclick="prev()" href="#portfolio-view">
                             <ion-icon name="arrow-back-outline"></ion-icon>
                         </a></li>
-                    <li class="grey-li"><a class="next" href="#portfolio-view">
+                    <li class="grey-li"><a class="next" onclick="next()" href="#portfolio-view">
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                         </a></li>
                 </ul>
             </div>
             <!-- CARROUSEL -->
-            <div class="carrousel">
+            <div id="carrousel" class="carrousel">
 
                 <div class="container-carrousel">
                     <div class="slider">
@@ -248,167 +277,52 @@
                             <div id="estudo" class="slide">
                                 <div class="slide-content">
                                     <img src="img/carrousel/1.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/1.png" alt="" />
-                                    </div>
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Atividade-Pace/Peace-main/">Abrir</a>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="slide-content">
                                     <img src="img/carrousel/2.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/2.png" alt="" />
-                                    </div>
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Atividade-Financiamento/Financiamento-main/">Abrir</a>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="slide-content">
                                     <img src="img/carrousel/3.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/3.png" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="slide-content">
-                                    <img src="img/carrousel/4.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/4.png" alt="" />
-                                    </div>
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/PF3_NikolasAmorim/">Abrir</a>
                                 </div>
                             </div>
                             <div id="testes" class="slide">
                                 <div class="slide-content">
+                                    <img src="img/carrousel/4.png" alt="" />
+                                    <a class="spec-but" href="https://nikolasamorim.github.io/Site-pessoal/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
                                     <img src="img/carrousel/5.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/5.png" alt="" />
-                                    </div>
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Site-Pessoal-Novo/">Abrir</a>
                                 </div>
                             </div>
                             <div id="profissional" class="slide">
                                 <div class="slide-content">
                                     <img src="img/carrousel/6.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/6.png" alt="" />
-                                    </div>
+                                    <a class="spec-but" href="http://setoreletrico.com/">Abrir</a>
                                 </div>
                             </div>
                             <div class="slide">
                                 <div class="slide-content">
                                     <img src="img/carrousel/7.png" alt="" />
-                                    <div class="onhover">
-                                        <img src="img/carrousel/7.png" alt="" />
-                                    </div>
+                                    <a class="spec-but" href="https://eletricafh.com.br/">Abrir</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <script>
-                    var slides = document.querySelectorAll(".slide");
-
-                    function eachFunc(array, fn) {
-                        for (var i = 0; i < array.length; i++) {
-                            fn.call(array[i]);
-                        }
-                    }
-
-                    function eachSiblings(node, fnprev, fnafter) {
-                        console.log("Ejecutando la funcion eachSiblings()");
-                        var foundIndex = findNodeIndex(node);
-                        console.log("indice encontrado", foundIndex);
-                        for (var i = 0; i < node.parentNode.children.length; i++) {
-                            if (node.parentNode.children[i] != node) {
-                                if (i < foundIndex) {
-                                    fnprev.call(node.parentNode.children[i], foundIndex);
-                                } else {
-                                    fnafter.call(node.parentNode.children[i], foundIndex);
-                                }
-                            }
-                        }
-                    }
-
-                    function findNodeIndex(node) {
-                        if (node != undefined) { // Si el nodo es diferente de undefined
-                            for (var i = 0; i < node.parentNode.children.length; i++) {
-                                console.log("Iterando nodo practicamente hermano", i);
-                                if (node === node.parentNode.children[i]) { // Si el nodo parametro es igual a el nodo encontrado como hijo
-                                    return i;
-                                }
-                            }
-                        } else {
-                            alert('ERRO!! Infelizmente não foi possível realizar a ação!')
-                        }
-                    }
-
-                    function siblings(node) {
-                        var siblings = [];
-                        for (var i = 0; i < node.parentNode.children; i++) {
-                            if (node.parentNode.children[i] == node) {
-                                siblings.push(node.parentNode.children[i]);
-                            }
-                        }
-                        return siblings;
-                    }
-
-                    eachFunc(slides, function () {
-                        this.addEventListener("mouseover", function () {
-                            var layerHover = this.querySelector(".onhover");
-                            layerHover.style.width = "135%";
-                            eachSiblings(this, function (x) { // Before Siblings
-                                if ((x + 1) % 6 == 0) { // Si el indice del slide (zoomeable) + 1,  es multiplo de 6
-                                    // Que Todos los nodos hermanos previos se desplazen 36% hacia la izquierda
-                                    this.style.transform = "translateX(-36%)";
-                                } else {
-                                    if (x % 6 != 0) { // Si el indice del slide (zoomeable),  no es multiplo de 6
-                                        // Que todos los nodos hermanos previos se desplazen 18% hacia la izquierda
-                                        this.style.transform = "translateX(-18%)";
-                                    }
-                                }
-                            }, function (x) { // After Siblings
-                                if (x % 6 == 0) { // Si el indice del slide (zoomeable),  es multiplo de 6
-                                    // Que todos los nodos hermanos siguientes se desplazen 36% hacia la derecha
-                                    this.style.transform = "translateX(36%)";
-                                } else {
-                                    if ((x + 1) % 6 != 0) { // Si el indice del slide (zoomeable) + 1,  es multiplo de 6
-                                        // Que todos los nodos hermanos siguientes se desplazen 18% hacia la derecha
-                                        this.style.transform = "translateX(18%)";
-                                    }
-                                }
-                            });
-                        }, false);
-                        this.addEventListener("mouseleave", function () {
-                            var layerHover = this.querySelector(".onhover");
-                            layerHover.style.width = "";
-                            eachSiblings(this, function () {
-                                this.style.transform = "";
-                            }, function () {
-                                this.style.transform = "";
-                            });
-                        }, false);
-                    });
-                    // Pagination
-                    var sliderContent = document.querySelector(".slider-content");
-                    var prev = document.querySelector(".prev"),
-                        next = document.querySelector(".next");
-                    var pos = 0;
-                    next.addEventListener("click", function () {
-                        if (pos < Math.ceil(slides.length / 6) - 1) {
-                            pos++;
-                            console.log(pos);
-                            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
-                        }
-                    });
-
-                    prev.addEventListener("click", function () {
-                        if (pos > 0) {
-                            pos--;
-                            console.log(pos);
-                            sliderContent.style.transform = "translateX(-" + (pos * 100) + "%)";
-                        }
-                    });
-
-                </script>
             </div>
         </div>
     </section>
@@ -478,7 +392,8 @@
                     <a href="https://linktr.ee/nikolasamorim"><i class="fa-solid fa-tree"></i></a>
                     <a href="https://codepen.io/nikolas_amorim"><i class="fa-brands fa-codepen"></i></a><br><br>
                     <a href="https://www.instagram.com/nikolas.amorim/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5531988698560&text=Ol%C3%A1%20tudo%20bem%3F"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531988698560&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                            class="fab fa-whatsapp"></i></a>
                 </p>
             </section>
         </section>
