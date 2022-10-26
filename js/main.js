@@ -1,5 +1,5 @@
 try {
-    return climate(i)
+    return climate()
 } catch{
 
 }
