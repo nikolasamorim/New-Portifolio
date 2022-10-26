@@ -1,13 +1,4 @@
 
-try{
-    if (document.cookie == "night") {
-        return night();
-     } else if (document.cookie == "day") {
-        return day();
-     }
-} catch{
-}
-
 
 function climate(i) {
     var i
