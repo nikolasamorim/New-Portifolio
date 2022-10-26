@@ -15,6 +15,15 @@ function climate(i) {
     }
 }
 
+try{
+    if (document.cookie == "night") {
+        return night();
+     } else if (document.cookie == "day") {
+        return day();
+     }
+} catch{
+}
+
 
 function night() {
     var nav = document.querySelector("#nav-img");
