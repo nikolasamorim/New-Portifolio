@@ -1,18 +1,18 @@
 
 
-let i = 0
-let x = 5
+function climate(i) {
+    if (i == 0) {
+        document.cookie = "night";
+    } else if (i == 1) {
+        document.cookie = "day";
+    }
 
-if(i == 0){
-    document.cookie = "night";
+    if (document.cookie == "night") {
+        function night()
+    } else if (document.cookie == "day") {
+        function day()
+    }
 }
-
-if(document.cookie == "night"){
-    function night()
-}else{
-    function day()
-}
-
 
 
 function night() {
@@ -55,7 +55,7 @@ function day() {
 
     var image = document.querySelector("#apresentation-img");
     image.setAttribute('src', 'img/about-nik-light-wpp.png');
-    
+
     var about = document.querySelector("#about-img");
     about.setAttribute('src', 'img/about-nik-light.png');
 
