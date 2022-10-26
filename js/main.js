@@ -1,4 +1,8 @@
+try {
+    return climate(i)
+} catch{
 
+}
 
 function climate(i) {
     var i
