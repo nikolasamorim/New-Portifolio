@@ -1,8 +1,3 @@
-try {
-    return climate();
-} catch{
-
-}
 
 function climate(i) {
     var i
