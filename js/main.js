@@ -1,9 +1,3 @@
-if(document.cookie == "day"){
-    return climate(1);
-} else if(document.cookie == "night"){
-    return climate(0);
-}
-
 function climate(i) {
     var i
     if (i == 0) {
