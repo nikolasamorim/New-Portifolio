@@ -8,9 +8,9 @@ if(i == 0){
 }
 
 if(document.cookie == "night"){
-    alert("deu bom")
+    function night()
 }else{
-
+    function day()
 }
 
 
