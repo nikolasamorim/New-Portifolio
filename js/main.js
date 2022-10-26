@@ -1,3 +1,6 @@
+
+
+function climate(i) {
     var i
     if (i == 0) {
         document.cookie = "night";
@@ -10,6 +13,7 @@
     } else if (document.cookie == "day") {
        return day();
     }
+}
 
 
 function night() {
