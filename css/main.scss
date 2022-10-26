@@ -885,9 +885,11 @@ nav ul .li a:hover::after {
 /* FOOTER */
 
 #footer-main {
+    display: flex;
+    justify-content: center;
     background-color: #0f0f0f;
     box-shadow: inset 0px 3px 0px 0px var(--verde-principal);
-    padding: 20px 60px;
+    padding: 20px 0px;
 }
 
 .footer-ap {
@@ -895,9 +897,7 @@ nav ul .li a:hover::after {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 10px;
-    margin: 0 auto;
-    max-width: 100%;
-    padding-left: 180px;
+    width: 80%;
 }
 
 .footer-1 i{
@@ -922,7 +922,7 @@ nav ul .li a:hover::after {
 
 #footer-main section {
     color: rgb(185, 185, 185);
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 #footer-main .logo img {
@@ -946,8 +946,9 @@ nav ul .li a:hover::after {
 .last {
     display: flex;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 10px;
     left: 0;
     bottom: 0;
@@ -1043,6 +1044,15 @@ nav ul .li a:hover::after {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+    }
+
+    .port-align {
+        flex-direction: row;
+    }
+
+    .port-align .control-themes {
+        display: none;
+        appearance: none;
     }
 
     #contact-view .align-center a i{
