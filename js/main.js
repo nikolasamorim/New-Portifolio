@@ -1,26 +1,45 @@
+//Validação de dia ou noite salvo em um cookie, quando a página carrega
 window.onload = (event) => {
 if (document.cookie == "night") {
+    //Executando função após validação
     night();
  } else if (document.cookie == "day") {
+    //Executando função após validação
     day();
  }
 }
 
+//FUNÇÃO EXECUTADA APÓS ONCLICK NO HTML
 function climate(i) {
     var i
+
+    //VALIDAÇÃO DE VALOR ENVIADO PELO HTML
     if (i == 0) {
+        //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "night";
+
+            //VALIDAÇÃO DE VALOR ENVIADO PELO HTML
     } else if (i == 1) {
+        //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "day";
     }
 
+
+    //VALIDANDO VALOR ARMAZENADO EM COOKIE
     if (document.cookie == "night") {
+
+        //EXECUTANDO FUNÇÃO NIGHT
        return night();
     } else if (document.cookie == "day") {
+
+        //EXECUTANDO FUNÇÃO DAY
        return day();
     }
 }
 
+//FUNÇÃO QUE TRANSFORMA VALOR DE VARIAVÉIS CSS,
+//MUDA LINK DE IMAGENS NO HTML E DEFINI ICONE DE SUN OU MOON
+//FUNÇÃO RESPONSÁVEL POR CORES E IMAGENS ESCURAS
 function night() {
     var nav = document.querySelector("#nav-img");
     nav.setAttribute('src', 'img/logo-dark.png');
@@ -51,10 +70,13 @@ function night() {
     document.getElementById('wave3').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave4').style.backgroundImage = "url('img/wave.png')";
 
+    //RETORNO DE VALOR PARA CLIMATE
     return i = 0
 }
 
-
+//FUNÇÃO QUE TRANSFORMA VALOR DE VARIAVÉIS CSS,
+//MUDA LINK DE IMAGENS NO HTML E DEFINI ICONE DE SUN OU MOON
+//FUNÇÃO RESPONSÁVEL POR CORES E IMAGENS CLARAS
 function day() {
     var nav = document.querySelector("#nav-img");
     nav.setAttribute('src', 'img/logo-light.png');
@@ -85,6 +107,7 @@ function day() {
     document.getElementById('wave3').style.backgroundImage = "url('img/wave-light.png')";
     document.getElementById('wave4').style.backgroundImage = "url('img/wave-light.png')";
 
+    //RETORNO DE VALOR PARA CLIMATE
     return i = 1
 }
 
