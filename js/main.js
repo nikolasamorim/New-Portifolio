@@ -1,8 +1,10 @@
+window.onload = (event) => {
 if (document.cookie == "night") {
     night();
  } else if (document.cookie == "day") {
     day();
  }
+}
 
 function climate(i) {
     var i
