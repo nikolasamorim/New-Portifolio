@@ -5,13 +5,13 @@ function climate(i) {
     } else if (i == 1) {
         document.cookie = "day";
     }
-
-    if (document.cookie == "night") {
-       return night();
-    } else if (document.cookie == "day") {
-       return day();
-    }
 }
+
+if (document.cookie == "night") {
+    return night();
+ } else if (document.cookie == "day") {
+    return day();
+ }
 
 function night() {
     var nav = document.querySelector("#nav-img");
