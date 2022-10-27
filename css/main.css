@@ -69,7 +69,7 @@ body {
 
 .bolas > div {
   display: inline-block;
-  background-color: var(--font-light);
+  background-color: #f0f0f0;
   width: 30px;
   height: 30px;
   border-radius: 100%;
@@ -523,12 +523,12 @@ nav ul .li a:hover::after {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  width: 80%;
+  width: 90%;
   height: 90%;
   border-radius: 1%;
   padding: 25px;
-  background-color: var(--dark-three);
-  color: var(--font-light); }
+  background-color: #f0f0f0;
+  color: #0F0F0F; }
 
 .head-news {
   position: relative;
@@ -542,7 +542,9 @@ nav ul .li a:hover::after {
 .body-news {
   position: relative;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  padding: 10px 0px;
+  overflow: hidden; }
 
 .close {
   display: flex;
@@ -571,6 +573,11 @@ nav ul .li a:hover::after {
 
 .newspaper.see {
   display: flex; }
+
+.newspaper iframe {
+  height: 100%;
+  width: 100%;
+  overflow: visible; }
 
 /* END NEWSPAPER-VIEW */
 /* SERVICES-VIEW */
