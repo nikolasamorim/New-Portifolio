@@ -8,9 +8,9 @@ function climate(i) {
 }
 
 if (document.cookie == "night") {
-    return night();
+    night();
  } else if (document.cookie == "day") {
-    return day();
+    day();
  }
 
 function night() {
