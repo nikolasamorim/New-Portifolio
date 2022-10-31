@@ -1,12 +1,12 @@
 //Validação de dia ou noite salvo em um cookie, quando a página carrega
 window.onload = (event) => {
-if (document.cookie == "night") {
-    //Executando função após validação
-    night();
- } else if (document.cookie == "day") {
-    //Executando função após validação
-    day();
- }
+    if (document.cookie == "night") {
+        //Executando função após validação
+        night();
+    } else if (document.cookie == "day") {
+        //Executando função após validação
+        day();
+    }
 }
 
 //FUNÇÃO EXECUTADA APÓS ONCLICK NO HTML
@@ -18,7 +18,7 @@ function climate(i) {
         //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "night";
 
-            //VALIDAÇÃO DE VALOR ENVIADO PELO HTML
+        //VALIDAÇÃO DE VALOR ENVIADO PELO HTML
     } else if (i == 1) {
         //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "day";
@@ -29,11 +29,11 @@ function climate(i) {
     if (document.cookie == "night") {
 
         //EXECUTANDO FUNÇÃO NIGHT
-       return night();
+        return night();
     } else if (document.cookie == "day") {
 
         //EXECUTANDO FUNÇÃO DAY
-       return day();
+        return day();
     }
 }
 
@@ -59,8 +59,14 @@ function night() {
     document.body.style.setProperty('--font-light', '#f0f0f0');
     document.body.style.setProperty('--font-second', '#d3d3d3');
 
-    document.getElementById('moon').id = 'none-moon';
-    document.getElementById('none-sun').id = 'sun';
+    if (document.getElementById('moon') == 'moon') {
+
+        document.getElementById('moon').id = 'none-moon';
+        document.getElementById('none-sun').id = 'sun';
+
+    }else{
+        
+    }
 
     document.getElementById('moonmenu').id = 'none-moonmenu';
     document.getElementById('none-sunmenu').id = 'sunmenu';
