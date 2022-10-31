@@ -65,11 +65,14 @@ function night() {
         document.getElementById('none-sun').id = 'sun';
 
     }else{
-        
+
     }
 
+    
+    if (document.getElementById('moonmenu') == 'moonmenu') {
     document.getElementById('moonmenu').id = 'none-moonmenu';
     document.getElementById('none-sunmenu').id = 'sunmenu';
+    }
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave2').style.backgroundImage = "url('img/wave.png')";
