@@ -17,24 +17,16 @@ function climate(i) {
     if (i == 0) {
         //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "night";
+        return night();
 
         //VALIDAÇÃO DE VALOR ENVIADO PELO HTML
     } else if (i == 1) {
         //DEFININDO VALOR ARMAZENADO EM UM COOKIE
         document.cookie = "day";
-    }
-
-
-    //VALIDANDO VALOR ARMAZENADO EM COOKIE
-    if (document.cookie == "night") {
-
-        //EXECUTANDO FUNÇÃO NIGHT
-        return night();
-    } else if (document.cookie == "day") {
-
-        //EXECUTANDO FUNÇÃO DAY
         return day();
+
     }
+
 }
 
 //FUNÇÃO QUE TRANSFORMA VALOR DE VARIAVÉIS CSS,
@@ -73,7 +65,7 @@ function night() {
     document.getElementById('moonmenu').id = 'none-moonmenu';
     document.getElementById('none-sunmenu').id = 'sunmenu';
     }else{
-        
+
     }
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave.png')";
