@@ -2,10 +2,10 @@
 window.onload = (event) => {
 if (document.cookie == "night") {
     //Executando função após validação
-    night;
+    night();
  } else if (document.cookie == "day") {
     //Executando função após validação
-    day;
+    day();
  }
 }
 
