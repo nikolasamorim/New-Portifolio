@@ -72,6 +72,8 @@ function night() {
     if (document.getElementById('moonmenu') == 'moonmenu') {
     document.getElementById('moonmenu').id = 'none-moonmenu';
     document.getElementById('none-sunmenu').id = 'sunmenu';
+    }else{
+        
     }
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave.png')";
