@@ -69,10 +69,7 @@ body {
 
 .bolas > div {
   display: inline-block;
-  background-color: #f0f0f0;
   width: 30px;
-  height: 30px;
-  border-radius: 100%;
   margin: 20px;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -91,6 +88,9 @@ body {
 .bolas > div:nth-child(3) {
   animation-duration: 0.75s;
   animation-delay: 0.24s; }
+
+.bolas img {
+  width: 120px; }
 
 @keyframes animarBola {
   0% {
