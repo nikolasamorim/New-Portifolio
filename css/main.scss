@@ -81,10 +81,8 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.bolas>div {
-    display: inline-block;
-    width: 30px;
-    margin: 20px;
+.bolas img {
+    width: 120px;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     animation-name: animarBola;
@@ -92,41 +90,21 @@ body {
     animation-iteration-count: infinite;
 }
 
-.bolas>div:nth-child(1) {
+.bolas img {
     animation-duration: 0.75s;
     animation-delay: 0;
 }
 
-.bolas>div:nth-child(2) {
-    animation-duration: 0.75s;
-    animation-delay: 0.12s;
-}
-
-.bolas>div:nth-child(3) {
-    animation-duration: 0.75s;
-    animation-delay: 0.24s;
-}
-
-.bolas img{
-    width: 120px;
-}
-
 @keyframes animarBola {
     0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
         opacity: 1;
     }
 
     16% {
-        -webkit-transform: scale(0.1);
-        transform: scale(0.1);
-        opacity: 0.7;
+        opacity: 0.5;
     }
 
     33% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
         opacity: 1;
     }
 }
