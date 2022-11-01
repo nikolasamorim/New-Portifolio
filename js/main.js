@@ -51,22 +51,11 @@ function night() {
     document.body.style.setProperty('--font-light', '#f0f0f0');
     document.body.style.setProperty('--font-second', '#d3d3d3');
 
-    if (document.getElementById('moon') == 'moon') {
+    document.getElementById('moon').id = 'none-moon';
+    document.getElementById('none-sun').id = 'sun';
 
-        document.getElementById('moon').id = 'none-moon';
-        document.getElementById('none-sun').id = 'sun';
-
-    }else{
-
-    }
-
-    
-    if (document.getElementById('moonmenu') == 'moonmenu') {
     document.getElementById('moonmenu').id = 'none-moonmenu';
     document.getElementById('none-sunmenu').id = 'sunmenu';
-    }else{
-
-    }
 
     document.getElementById('wave1').style.backgroundImage = "url('img/wave.png')";
     document.getElementById('wave2').style.backgroundImage = "url('img/wave.png')";
