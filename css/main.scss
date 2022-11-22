@@ -922,6 +922,11 @@ nav ul .li a:hover::after {
 
 #contact-view .align-center {
     align-items: center;
+    
+        & span {
+        text-decoration: none;
+        color: var(--font-light);
+    }
 }
 
 #contact-view .align-center a i {
