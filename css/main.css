@@ -746,6 +746,11 @@ nav ul .li a:hover::after {
 #contact-view .align-center {
   align-items: center; }
 
+#contact-view .align-center span {
+  text-decoration: none;
+  color: var(--font-light);
+}
+
 #contact-view .align-center a i {
   margin-right: 15px;
   margin-bottom: 10px;
