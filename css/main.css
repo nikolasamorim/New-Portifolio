@@ -734,10 +734,10 @@ nav ul .li a:hover::after {
 .next:hover {
   color: #ccc; }
 
-#estudo, #testes, #profissional {
-  display: inline;
-  height: 100%;
-  border: 2px solid var(--dark-three); }
+#estudo,
+#testes,
+#profissional {
+  display: inline; }
 
 /* END CARROUSEL*/
 /* END PORTFOLIO-VIEW */

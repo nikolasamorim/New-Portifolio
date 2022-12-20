@@ -906,11 +906,13 @@ nav ul .li a:hover::after {
     color: #ccc;
 }
 
-#estudo,#testes,#profissional {
+#estudo,
+#testes,
+#profissional {
     display: inline;
-    height: 100%;
-    border: 2px solid var(--dark-three);
+
 }
+
 
 /* END CARROUSEL*/
 
