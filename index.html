@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <script src="js/main.js"></script> 
+
+    <!--Animation css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--fontAwesome-->
+    <script src="https://kit.fontawesome.com/f1b6df7d8e.js" crossorigin="anonymous"></script>
+
+    <!--IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <img class="load-img" src="img/about-nik-light.png" alt="">
+    <img class="load-img" src="img/about-nik-light-wpp.png" alt="">
+    <img class="load-img" src="img/contact-nik-light.png" alt="">
+
+    <title>Nikolas Amorim - Home</title>
+</head>
+
+<body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <div class="bolas">
+                <img src="img/loader.png" alt="loader.png">
+            </div>
+        </div>
+    </div>
+    <!-- fim do preloader -->
+    <script>
+        //<![CDATA[
+        $(window).on('load', function () {
+            $('#preloader .inner').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({
+                'overflow': 'visible'
+            });
+        })
+            //]]>
+    </script>
+
+    <nav>
+        <div class="org-nav">
+            <ul>
+                <li><a href="#" class="logo"><img id="nav-img" src="img/logo-dark.png" alt="logo.png"></a></li>
+            </ul>
+            <ul class="header">
+                <li class="li"><a href="#about">Sobre mim</a></li>
+                <li class="li"><a href="#services">Serviços</a></li>
+                <li class="li"><a href="#portfolio-view">Portfólio</a></li>
+                <li><a class="spec-but" href="#contact-view">Contato</a></li>
+            </ul>
+            <!--Hamburguer-->
+            <div class="org">
+                <input id="hamburguer" type="checkbox" style="display:none;">
+                <label for="hamburguer">
+                    <div class="hamburguer active"></div>
+                </label>
+                <ul class="menu active">
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#portfolio-view">Portfólio</a></li>
+                    <li><a href="#contact-view">Contato</a></li>
+                    <li class="light-dark">
+                        <a onclick="climate(1)" id="sunmenu" class="sun" href="#null"><i
+                                class="fa-solid fa-sun"></i></a>
+
+                        <a onclick="climate(0)" id="none-moonmenu" class="moon" href="#null"><i
+                                class="fa-solid fa-moon"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $(".hamburguer").click(function () {
+                        $(this).toggleClass("active");
+                        $(".menu").toggleClass("active");
+                    });
+                });
+            </script>
+        </div>
+    </nav>
+
+    <!-- APRESENTATION-VIEW -->
+    <section id="view-sec" class="container">
+        <div class="org-align">
+            <div class="align-center">
+                <!-- SPAN DA ESQUERDA -->
+                <span>
+                    <div class="infos-align">
+                        Hello, I' am a
+                        <h1>
+                            <div class="verde-principal">Web</div> Developer <div class="verde-principal"><i
+                                    class="fa-solid fa-code"></i></div>
+                        </h1>
+                        Olá, sou Nikolas Amorim, sou desenvolvedor front-end,
+                        cristão e guitarrista.
+                        <br><br>
+                        <a id="adjust-but" class="spec-but" href="doc/Profile.pdf" download="Profile"
+                            target="_blank">Download Cv</a>
+                    </div>
+                    <div class="redes-sociais">
+                        <a href="https://www.linkedin.com/in/nikolasamorim/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/nikolasamorim"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linktr.ee/nikolasamorim"><i class="fa-solid fa-tree"></i></a>
+                        <a href="https://codepen.io/nikolas_amorim"><i class="fa-brands fa-codepen"></i></a>
+                    </div>
+                </span>
+                <!-- SPAN DA DIREITA -->
+                <span class="img-view">
+                    <div class="infos-align">
+                        <img id="apresentation-img" src="img/about-nik-wpp.png" alt="nik.png">
+                    </div>
+                    <div class="redes-sociais light-dark">
+                        <a onclick="climate(1)" id="sun" class="sun" href="#null"><i class="fa-solid fa-sun"></i></a>
+
+                        <a onclick="climate(0)" id="none-moon" class="moon" href="#null"><i
+                                class="fa-solid fa-moon"></i></a>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- END -> APRESENTATION-VIEW -->
+
+    <section class="onda">
+        <div id="wave1" class="wave wave1"></div>
+        <div id="wave2" class="wave wave2"></div>
+        <div id="wave3" class="wave wave3"></div>
+        <div id="wave4" class="wave wave4"></div>
+    </section>
+
+    <!-- ABOUT-VIEW -->
+    <section id="about" class="container bg-second">
+        <div class="org-align">
+            <div class="align-center">
+                <span class="space-itens">
+                    <img id="about-img" src="img/about-nik-dark.png" alt="nik.png">
+                </span>
+                <span>
+                    <div class="infos-align">
+                        <h1>
+                            <div class="verde-principal"><i class="fa-solid fa-bars-staggered"></i> Sobre Mim</div>
+                        </h1>
+                    </div>
+                    Atualmente possuo 18 anos e atuo no mercado de trabalho desde os 17 anos.
+                    Trabalhei como menor aprendiz por um curto período de tempo e hoje atuo
+                    como freelancer de sites.
+                    <br><br>
+                    <a id="news" id="adjust-but" class="spec-but" href="#about">Experiência</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="newspaper">
+        <div class="container-news">
+            <span class="head-news">
+                <h1>
+                    Experiência
+                </h1>
+                <a class="close" id="news-close" href="#about"></a>
+            </span>
+            <span class="body-news">
+                <iframe src="doc/OutDocument.htm" frameborder="0"></iframe>
+            </span>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $("#news").click(function () {
+                $(this).toggleClass("see");
+                $(".newspaper").toggleClass("see");
+            });
+        });
+        $(document).ready(function () {
+            $("#news-close").click(function () {
+                $(this).toggleClass("see");
+                $(".newspaper").toggleClass("see");
+            });
+        });
+    </script>
+    <!-- END -> ABOUT-VIEW -->
+
+    <!-- SERVICES-VIEW -->
+    <section id="services" class="container">
+        <div class="org-align">
+            <div class="align-center">
+                <h1 class="services-h1">
+                    <div class="verde-principal">Serviços</div>
+                </h1>
+                <div class="services-cont">
+                    <div>
+                        <ion-icon name="bulb-outline"></ion-icon><br>
+                        Interfaces Web
+                        <h1>
+                            Design UX & UI
+                        </h1>
+                        Criação completa das interfaces do projeto utilizando
+                        as melhores tecnologias do mercado trazendo velocidade
+                        e design de ponta.
+                    </div>
+                    <div>
+                        <ion-icon name="construct-outline"></ion-icon><br>
+                        Front-end & Back-end
+                        <h1>
+                            Construção de Sites
+                        </h1>
+                        Desenvolvimento completo do seu projeto.
+                        Criação de e-commerces, sites pessoais, de
+                        apresentação. Além de tudo ofereço uma nova
+                        forma de vender online (sem taxas).
+                    </div>
+                    <div>
+                        <ion-icon name="desktop-outline"></ion-icon><br>
+                        Projetos Autônomos
+                        <h1>
+                            Site Customizado
+                        </h1>
+                        Você pode ter sua páginagit com uma facilidade inacreditável!
+                        Me conte suas ideias e irei personalizar um design
+                        especial para você!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grey-div"></div>
+    </section>
+    <!-- END SERVICES-VIEW -->
+
+    <!-- PORTFOLIO-VIEW -->
+    <section id="portfolio-view" class="container">
+        <div class="org-align">
+            <div class="align-center port-align">
+                <ul>
+                    <li>
+                        <h1 class="verde-principal">Portfólio</h1>
+                    </li>
+                </ul>
+                <ul class="control-themes">
+                    <li class="grey-li"><a href="#estudo">Estudo</a></li>
+                    <li class="grey-li"><a href="#testes">Testes</a></li>
+                    <li class="grey-li"><a href="#profissional">Profissional</a></li>
+                </ul>
+                <ul class="control-pagination">
+                    <li class="grey-li"><a class="prev" onclick="prev()" href="#portfolio-view">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </a></li>
+                    <li class="grey-li"><a class="next" onclick="next()" href="#portfolio-view">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+            <!-- CARROUSEL -->
+            <div id="carrousel" class="carrousel">
+
+                <div class="container-carrousel">
+                    <div class="slider">
+                        <div class="slider-content">
+                            <div id="estudo">
+                             <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/1.png" alt="" />
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/PF3_NikolasAmorim/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/2.png" alt="" />
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Atividade-Financiamento/Financiamento-main/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/3.png" alt="" />
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Pokedex/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/4.png" alt="" />
+                                    <a class="spec-but"
+                                        href="https://codepen.io/nikolas_amorim/full/XWqeYjb">Abrir</a>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="testes">
+                                <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/5.png" alt="" />
+                                    <a class="spec-but" href="https://nikolasamorim.github.io/Site-pessoal/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/6.png" alt="" />
+                                    <a class="spec-but"
+                                        href="https://nikolasamorim.github.io/Site-Pessoal-Novo/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/7.png" alt="" />
+                                    <a class="spec-but" href="https://codepen.io/nikolas_amorim/full/LYrWxpj">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/8.png" alt="" />
+                                    <a class="spec-but" href="https://codepen.io/nikolas_amorim/full/KKezEvR">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/9.png" alt="" />
+                                    <a class="spec-but" href="https://codepen.io/nikolas_amorim/full/xxzqprQ">Abrir</a>
+                                </div>
+                            </div>
+                        </div>
+                            <div id="profissional">
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/10.png" alt="" />
+                                    <a class="spec-but" href="http://setoreletrico.com/">Abrir</a>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-content">
+                                    <img src="img/carrousel/11.png" alt="" />
+                                    <a class="spec-but" href="https://eletricafh.com.br/">Abrir</a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- END PORTFOLIO-VIEW -->
+
+    <!-- CONTACT-VIEW -->
+    <section id="contact-view" class="container">
+        <div class="org-align">
+            <div class="align-center">
+                <span class="space-itens">
+                    <img id="contact-img" src="img/contact-nik-dark.png" alt="nik.png">
+                </span>
+                <span>
+                    <div class="infos-align">
+                        <h1>
+                            <div class="verde-principal">Contato</div>
+                        </h1>
+                    </div>
+
+                    <a href="https://api.whatsapp.com/send?phone=5531988698560&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                            class="fab fa-whatsapp"></i></a>
+                            <div class="tel">(31) 98869-8560</div>
+                    <br>
+                    <a href="mailto:nikolasgabrielamorim@gmail.com"><i
+                            style="box-shadow: -1px 5px 15px 0px #ebc546;background-color: #ebc546;"
+                            class="fas fa-envelope"></i></a>nikolasgabrielamorim@gmail.com<br>
+                    <a href="https://www.linkedin.com/in/nikolasamorim/"><i
+                            style="box-shadow: -1px 5px 15px 0px #0A66C2;background-color: #0A66C2;"
+                            class="fa-brands fa-linkedin-in"></i></a>nikolasamorim<br>
+                    <a href="https://www.instagram.com/nikolas.amorim/"><i
+                            style="box-shadow: -1px 5px 15px 0px #da00a7;background-color: #da00a7;"
+                            class="fa-brands fa-instagram"></i></a>@nikolas.amorim<br>
+
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTACT-VIEW -->
+
+    <!-- FOOTER-VIEW -->
+    <footer id="footer-main">
+        <section class="footer-ap">
+            <section class="footer-1">
+                <a class="logo" href="#"><img src="img/logo-dark.png" alt="logo.png"></a>
+                <p>
+                    <i class="fa-brands fa-html5" style="color: #DD4B25;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #254BDD;"></i>
+                    <i class="fa-brands fa-sass" style="color: #C76494;"></i>
+                    <i class="fa-brands fa-js" style="color: #EFD81D;"></i>
+                    <i class="fa-brands fa-react" style="color: #5ED3F3;"></i>
+                    <i class="fa-brands fa-git-alt" style="color: #F3501D;"></i>
+                </p>
+            </section>
+
+            <section class="footer-2">
+                <h4>Menu</h4>
+                <p><a href="#about">Sobre mim</a></p>
+                <p><a href="#services">Serviços</a></p>
+                <p><a href="#portfolio-view">Portfólio</a></p>
+                <p><a href="#contact-view">Contato</a></p>
+            </section>
+
+            <section class="footer-3">
+                <h4>Redes Sociais</h4>
+                <p>
+                    <a href="https://www.linkedin.com/in/nikolasamorim/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nikolasamorim"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linktr.ee/nikolasamorim"><i class="fa-solid fa-tree"></i></a>
+                    <a href="https://codepen.io/nikolas_amorim"><i class="fa-brands fa-codepen"></i></a><br><br>
+                    <a href="https://www.instagram.com/nikolas.amorim/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531988698560&text=Ol%C3%A1%20tudo%20bem%3F"><i
+                            class="fab fa-whatsapp"></i></a>
+                </p>
+            </section>
+        </section>
+
+    </footer>
+
+    <div class="last">
+        <div>
+            Copyright© 2022 - Made by <a class="logo-footer" href="https://nikolasamorim.github.io/New-Portifolio/"><img
+                    src="img/logo-footer.png" alt="logo.png"></a>
+        </div>
+    </div>
+    <!-- END FOOTER-VIEW -->
+
+</body>
+
+</html>
