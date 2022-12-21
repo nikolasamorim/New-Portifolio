@@ -1158,24 +1158,35 @@ nav ul .li a:hover::after {
         appearance: none;
     }
 
-    #contact-view .align-center a i {
-        margin: 5px 7px 5px 0px;
+    .container-carrousel {
+        width: 2400px;
     }
 
-    #contact-view .align-center .fa-whatsapp {
-        font-size: 1.4rem;
+    .slide {
+
+        & img {
+            width: 100%;
+        }
     }
 
-    #contact-view .align-center .fa-linkedin-in {
-        font-size: 1.4rem;
-    }
+        #contact-view .align-center a i {
+            margin: 5px 7px 5px 0px;
+        }
 
-    #contact-view .align-center .fa-instagram {
-        font-size: 1.4rem;
-    }
+        #contact-view .align-center .fa-whatsapp {
+            font-size: 1.4rem;
+        }
 
-    #contact-view .align-center a i:hover {
-        transform: scale(1.1);
-    }
+        #contact-view .align-center .fa-linkedin-in {
+            font-size: 1.4rem;
+        }
 
-}
+        #contact-view .align-center .fa-instagram {
+            font-size: 1.4rem;
+        }
+
+        #contact-view .align-center a i:hover {
+            transform: scale(1.1);
+        }
+
+    }

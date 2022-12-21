@@ -913,6 +913,10 @@ nav ul .li a:hover::after {
   .port-align .control-themes {
     display: none;
     appearance: none; }
+  .container-carrousel {
+    width: 2400px; }
+  .slide img {
+    width: 100%; }
   #contact-view .align-center a i {
     margin: 5px 7px 5px 0px; }
   #contact-view .align-center .fa-whatsapp {
