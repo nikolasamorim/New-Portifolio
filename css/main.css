@@ -734,14 +734,11 @@ nav ul .li a:hover::after {
 .next:hover {
   color: #ccc; }
 
-<<<<<<< HEAD
 #estudo,
 #testes,
 #profissional {
   display: inline; }
 
-=======
->>>>>>> 4edef1a5c5f780048ae6fe65b61db58f8d2c9d91
 /* END CARROUSEL*/
 /* END PORTFOLIO-VIEW */
 /* CONTACT-VIEW */
@@ -753,10 +750,6 @@ nav ul .li a:hover::after {
 
 #contact-view .align-center {
   align-items: center; }
-<<<<<<< HEAD
-=======
-
->>>>>>> 4edef1a5c5f780048ae6fe65b61db58f8d2c9d91
   #contact-view .align-center span .tel {
     display: inline-flex;
     text-decoration: none;
